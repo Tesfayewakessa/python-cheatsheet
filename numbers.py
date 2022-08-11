@@ -27,3 +27,9 @@ we have a whool bunch of operators at our disposal
  Finally, python has a hamdy of handling big int's easier to read
  4000000000 can be read as 4_000_000_000
 '''
+# The basics 
+2 + 2 #simple addition
+2 - 2 # simple subtruction
+2*2 #simple multiplication
+
+# division and mudulus
