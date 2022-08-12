@@ -22,6 +22,7 @@ we have a whool bunch of operators at our disposal
  Built-in function:
 
  round()  ---> rounds numbers to the specified number of decimals i.e round(number, decimals)
+                if decimals is not passed, the result is floor to an int
  
 
  Finally, python has a hamdy of handling big int's easier to read
@@ -33,3 +34,12 @@ we have a whool bunch of operators at our disposal
 2*2 #simple multiplication
 
 # division and mudulus
+10/4 #float division
+10//4 #integer division
+10%2 #modulus
+divmod(10,4) #returns a tuple (Division,remainder)
+round(10.0234,2)
+
+2**4 # exponentiation
+pow(2,4)
+assert(2**4 == pow(2,4))
