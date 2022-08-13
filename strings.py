@@ -76,7 +76,7 @@ print(s) #\n produces new line
 
 #passing raw stringd
 print('C:\pathname')
-print(r'C:\pathname') # the r before  the quote--------->it gives an ascii carriage return(CR)
+print(r'C:\pathname') # the r before  the quote--------->regular string
 
 #https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals
 
@@ -104,7 +104,8 @@ print(full_name) #prints without quotes
 
 'python''_' 'cheatsheet' ' ' 'with example'
 
-sentence  = ('Y/A increase/decrease the linear velocity by 20%' 'B/X increase/decrease the angular velocity by 20%')
+sentence  = ('Y/A increase/decrease the linear velocity by 20%' 
+                'B/X increase/decrease the angular velocity by 20%')
 #indexing
 '''
  +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
