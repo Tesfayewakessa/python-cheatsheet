@@ -70,10 +70,6 @@ zfill()         fills the string with a specified number of zero values at the b
 #using the function print will print the result of the string without code
 #uses of \n
 
-from datetime import datetime
-from turtle import title
-
-
 s = 'Frist line.\nSecond line' 
 s# will not print the second line on new . Instead \n is included
 print(s) #\n produces new line
