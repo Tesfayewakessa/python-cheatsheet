@@ -118,3 +118,24 @@ print(list1 == list2)
 list1.sort(key=None, reverse=True)
 print(list1 == list2.sort()) #order and compare
 
+#Getting the index of an element contained in a list
+list3 = list1 + list2
+#define the index from which we want to start
+list3.index(3,3) # returns the index of 3 list3 starting from position 3
+list3.index(3,3,5) # returns the index position of 3 starting from position and ending at position 5 excluding 5
+
+# Using lists as queues
+from collections import deque
+color_list = deque(["Red", "Blue", "Green", "Black"])
+#append to the queue when data arrives
+color_list.append("White") #white arrives
+print(color_list)
+
+color_list.append("Yellow") #Yellow arrives
+
+print(color_list)
+
+color_list.popleft() #The first to arrive now leaves
+color_list.popleft() #The second to arrive now leaves and returned as value
+
+print(color_list)# remaining queue in order of arrival
