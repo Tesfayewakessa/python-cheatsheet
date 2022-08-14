@@ -7,9 +7,11 @@ Tuples are  containers that are written as a list of comma separated items/value
 Tuples are immutable-----meaning that the items can not be changed. However, a tuples can contain mutable objects
 Tuples play like a sort of struct in python----- a wayto pass a little logical, fixed size bundle of values
 Tuple has two methods available
-count()     Returns the number of elements with a specified value
+count()     Returns the number of times the elements with a specified value appears in the tuple
 index()     Returns the index fof the first element with specified value
 
+
+How operators + and * are used in tuple
 '''
 
 #Basic command--tuple packing
@@ -29,6 +31,7 @@ y
 #trailling comma for creating a tuple of one item
 singleton = 'world', # singleton = 'world' makes singleton a string but singleton = 'world', makes singleton a tuple because of the trailing comma
 
+# size of a tuple
 len(empty)
 
 len(singleton)
@@ -128,3 +131,39 @@ p[1]
 p.x
 p.y
 p._fields # Point._field
+
+#counting the number of times an item appears in a list
+tuplec = 2,4,6,7,9,0,12,23,2,4,6
+cnt = tuplec.count(4) #If the value passed is not in the tuple, 0 is returned
+
+#remove an item from a tuple
+
+# two approaches to remove an item from a tuple
+#approach 1  ---------- convert the tuple to list and use remove method
+listc = list(tuplec)
+listc.remove(0)
+print(listc)
+tuplec = tuple(listc)
+print(tuplec)
+
+#Approach 2 use the + operator with index
+
+tuplec = tuplec[:5] + tuplec[6:]
+print(tuplec)
+
+#getting the index of an item in a list
+#use the method index()
+
+tuplec.index(23) # Returns at what index position the value is in the tuple. In this case 5
+
+
+#How operators + and * are used in tuple
+# + operator joins two or tuples together
+tuplec = tuplec[:5] + tuplec[6:] + tuplec[:5] + tuplec[6:] 
+
+# * operator repeats the item in the tuple
+tup = 5,
+tup = tup*5 #(5, 5, 5, 5, 5)
+print(tup)
+
+
