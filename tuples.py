@@ -132,6 +132,7 @@ p.x
 p.y
 p._fields # Point._field
 
+
 #counting the number of times an item appears in a list
 tuplec = 2,4,6,7,9,0,12,23,2,4,6
 cnt = tuplec.count(4) #If the value passed is not in the tuple, 0 is returned
@@ -165,5 +166,31 @@ tuplec = tuplec[:5] + tuplec[6:] + tuplec[:5] + tuplec[6:]
 tup = 5,
 tup = tup*5 #(5, 5, 5, 5, 5)
 print(tup)
+# example
+e = ("x",)
+n = 2
+for i in range(n):
+    e = (e,)
+    print(x)
 
+x = (2,3)
+y = (4,5)
+
+z = x + y # + operator
+
+# built-in function 
+print(max(z))
+z = sum(z,1) #15 It all all the elments of the the tuple first and adds 1 to it
+
+numberGmaes = {}
+numberGmaes[(2,4,6)] = 14
+numberGmaes[(6,4,2)] = 16
+numberGmaes[(2,4)] = 18
+
+sum = 0
+
+for x in numberGmaes:
+    sum+=numberGmaes[x]
+
+print(len(numberGmaes) + sum) #51
 
