@@ -39,6 +39,12 @@ squares.append(36)
 squares
 squares.sort()
 squares
+squares.insert(2,"Apple") #inserts a string apple at the third position
+
+#remove an element at position 3
+squares.remove("apple")
+squares.sort(key=None, reverse=False)
+squares.reverse()
 
 #indexing
 '''
@@ -54,7 +60,8 @@ squares
 squares[0]
 squares[-1]
 squares[-3:]
-
+#using [::] first: is for start, second : is for stop
+squares[::]
 # create a copy of a list
 squares[:]
 assert(squares[:]==squares.copy())
@@ -67,7 +74,7 @@ squares
 #modifying or altering items
 
 cubes = [1,8,27,65,125] # 65 was supposed to be 64 as 4 ** 3  
-
+#inserting element using indexing
 cubes[3] = 64
 cubes
 #list methods 
@@ -103,3 +110,11 @@ y
 
 x = list(('Tes','trying','to','code','using','python'))
 x
+
+#Compare two lists
+
+list1, list2 = [3,5,7,9],[3,5,7,9]
+print(list1 == list2)
+list1.sort(key=None, reverse=True)
+print(list1 == list2.sort()) #order and compare
+
