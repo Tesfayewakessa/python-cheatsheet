@@ -98,11 +98,11 @@ print(setz)
 setd = setx - sety
 
 #symmetric difference
+sete = setx ^ sety #returns a difference which are in a or b but not in both
 
-sete = setx ^ sety
-
-#issubset() issuperset()
+#issubset() 
 issubset = setx <= sety #returns true or false
+#issuperset()
 issupperset = setx >= sety
 
 #copy function
