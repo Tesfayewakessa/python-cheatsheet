@@ -104,7 +104,10 @@ dic4 = {}
 for d in (dic1, dic2, dic3): 
     dic4.update(d)
 print(dic4)
-
+#merging dictionaries with double asterix synthax
+dic5 = {**dic1,**dic2,**dic3}
+dic5
+assert(dic4==dic5)
 #Test whether a dictionary has a spefic key or not
 fruits = {}
 fruits["apple"] = 1
@@ -123,4 +126,5 @@ if "orange" in fruits:
 else:
     print("No orange")
 
+#define defualt values with .get() and .setdefault()
 

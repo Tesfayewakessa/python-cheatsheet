@@ -102,6 +102,11 @@ last_name = 'Wakessa'
 full_name = first_name + ' ' + last_name
 print(full_name) #prints without quotes
 
+
+#better way of concatinating string
+fname = ["Tesfaye",'Wakessa']
+full_name = " ".join(fname)
+full_name
 'python''_' 'cheatsheet' ' ' 'with example'
 
 sentence  = ('Y/A increase/decrease the linear velocity by 20%' 
@@ -179,5 +184,6 @@ f"{value:{z}.{precision}}"
 foo  = "bar"
 f"{foo = }" #white space is preserved
 f"{foo = :20}" # returns 20 characters
+
 
 

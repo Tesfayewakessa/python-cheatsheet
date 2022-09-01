@@ -40,7 +40,16 @@ squares
 squares.sort()
 squares
 squares.insert(2,"Apple") #inserts a string apple at the third position
-
+from collections import Counter
+numElementCount = Counter(squares)# returns a dictionary
+numElementCount
+#get the count for each element
+numElementCount[1]
+#get most common item as follows
+most_common = numElementCount.most_common()
+most_common #[(1, 1), (4, 1), (9, 1), (16, 1), (25, 1)]
+most_common[0] #(1, 1)
+most_common[0][1] # 1
 #remove an element at position 3
 squares.remove("apple")
 squares.sort(key=None, reverse=False)
@@ -139,3 +148,21 @@ color_list.popleft() #The first to arrive now leaves
 color_list.popleft() #The second to arrive now leaves and returned as value
 
 print(color_list)# remaining queue in order of arrival
+
+#best practices
+
+# use enumerate instead of range(len())------------enumerate gives index and value
+data = [1,2,3,-3,-4]
+#sort data in ascending order
+data = sorted(data)
+#sort data in eescending order
+data = sorted(data, reverse=True)
+print(data)
+for indx, val in enumerate(data):
+    if val<0:
+        data[indx] = 0
+print(data)
+
+nameData = [{"name":"Tati","Age":46},{"Name":"Mita","Age":47}]
+sortedName = sorted(nameData,key=lambda x: x['Age']) #sorted by specified key function
+sortedName
